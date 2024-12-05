@@ -1,0 +1,10 @@
+@use "../../libs/normalize.css/normalize";
+
+@use "common";
+@use "components";
+
+.header-image {
+    background-image: url(../../assets/images/img-header@2x.png);
+    width: ;
+    height: 100vh;
+}
