@@ -1,0 +1,25 @@
+@use "../../mixins" as *;
+@use "../../presets" as *;
+@use "sass:math";
+
+$local-gap: math.div(40px, 3);
+
+.skills {
+  padding: $gap-sm;
+  background-color: green;
+
+  &__container {
+    margin-bottom: 20px;
+    display: grid;
+    gap: $gap-sm;
+    grid-template-areas: repeat(4, 1fr);
+    grid-auto-rows: calc(33.3vh - $local-gap);
+    grid-template-columns: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $gap-lg;
+  }
+}

@@ -1,0 +1,30 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.skill-item {
+  background-color: $color-primary;
+  position: relative;
+
+  &__title {
+  }
+
+  &__link {
+  }
+
+  &__image {
+    background-image: url(assets/images/img-html.png);
+    background-size: cover;
+    background-position: center;
+    @include abs-position;
+  }
+
+  &__overlay {
+    background-color: $color-primary;
+  }
+
+  @for $i from 1 through 9 {
+    .skill-item:nth-of-type(3n + #{$i}) {
+      grid-area: a#{$i};
+    }
+  }
+}
