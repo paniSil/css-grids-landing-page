@@ -15,7 +15,7 @@ html {
 
 body {
   background-color: $color-white;
-  color: $color-white;
+  color: $color-gray;
 }
 
 h1 {
@@ -40,10 +40,29 @@ h1 {
 
 h2 {
   font-family: $font-header;
+
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  color: #2d3651;
+  margin: 0 0 1.5em;
+
+  @include lg-min {
+    font-size: 2.5rem;
+  }
+
+  @include lg-md {
+    font-size: 2rem;
+  }
+
+  @include md {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
   font-family: $font-header;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
 }
 
 a {
