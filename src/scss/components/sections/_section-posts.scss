@@ -48,10 +48,9 @@
   &:hover {
     color: $color-primary;
     background-color: color.adjust($color-gray-light2, $lightness: -10%);
-    border: solid 2px $color-primary;
 
     img {
-      scale: 1.1;
+      scale: 1.2;
     }
   }
 

@@ -601,10 +601,9 @@ a{
 .post-item:hover{
   color:#2d3651;
   background-color:rgb(212.5, 212.5, 212.5);
-  border:solid 2px #2d3651;
 }
 .post-item:hover img{
-  scale:1.1;
+  scale:1.2;
 }
 .post-item__link{
   -webkit-transition:color 0.3s;
