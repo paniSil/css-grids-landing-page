@@ -250,6 +250,7 @@ a{
       align-content:center;
   min-height:100vh;
   padding:150px 0;
+  background-color:#635856;
   background-image:url(../../../../assets/img/keisel.jpg);
   background-position:50% 50%;
   background-size:cover;
@@ -384,7 +385,7 @@ a{
 
 .header-overlay{
   opacity:0.6;
-  background-color:#635856;
+  background-color:rgba(99, 88, 86, 0.6);
   position:absolute;
   top:0;
   right:0;
