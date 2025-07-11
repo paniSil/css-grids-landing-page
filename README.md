@@ -1,4 +1,4 @@
-# Company website demo
+# CSS Grid Landing Page
 This website is a study project that was made during the Hillel FullStack JS course.
 
 Project page: [hillel-homework-16](https://panisil.github.io/hillel-homework-16/)
