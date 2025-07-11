@@ -1,7 +1,7 @@
 # CSS Grid Landing Page
 This website is a study project that was made during the Hillel FullStack JS course.
 
-Project page: [CSS Grids Landing]([https://panisil.github.io/hillel-homework-16/](https://panisil.github.io/css-grids-landing-page/))
+Project page: [CSS Grids Landing]([https://panisil.github.io/hillel-homework-16/](https://panisil.github.io/css-grids-landing-page/)
 
 ## Technologies Used
 - HTML5: for page structure.
