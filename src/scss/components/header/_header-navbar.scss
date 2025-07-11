@@ -11,13 +11,13 @@
       grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
       @include unlist(0 (-$gap-sm) 0 0);
     }
-
     @include md {
-      display: none;
-      overflow: hidden;
       position: absolute;
       top: 100%;
       right: $gap;
+
+      display: none;
+      overflow: hidden;
 
       text-align: right;
 
@@ -34,7 +34,7 @@
 
         content: "";
 
-        background-color: rgba($color-gray-dark, 0.25);
+        background-color: rgba($color-gray-light, 0.15);
 
         backdrop-filter: blur(5px);
       }
@@ -60,6 +60,8 @@
     &:hover,
     &:focus {
       color: $color-accent;
+      text-decoration: underline 2px solid;
+      text-underline-offset: 4px;
     }
   }
 
@@ -89,8 +91,8 @@
       transform: rotate(0deg);
 
       opacity: 1;
-      background: $color-white;
       border-radius: 3px 3px;
+      background: $color-gray-dark;
 
       &:nth-child(1) {
         top: 0;
@@ -108,16 +110,19 @@
     &.active span {
       &:nth-child(1) {
         top: 9px;
+
         transform: rotate(135deg);
       }
 
       &:nth-child(2) {
-        scale: 0;
         opacity: 0;
+
+        scale: 0;
       }
 
       &:nth-child(3) {
         top: 9px;
+
         transform: rotate(-135deg);
       }
     }

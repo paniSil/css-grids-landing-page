@@ -4,6 +4,7 @@
 
 %container {
   width: min(100% - $gap-x2, $container-size);
+
   margin-inline: auto;
 }
 
@@ -12,12 +13,10 @@
     padding-top: $gap-x5;
     padding-bottom: $gap-x5;
   }
-
   @include lg-md {
     padding-top: $gap-x4;
     padding-bottom: $gap-x4;
   }
-
   @include md {
     padding-top: $gap-x3;
     padding-bottom: $gap-x3;

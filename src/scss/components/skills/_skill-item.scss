@@ -3,16 +3,13 @@
 
 .skill-item {
   position: relative;
-
   overflow: hidden;
+  border-radius: 8px;
 
   &__title {
     z-index: 1;
-
     margin: 0;
-
     letter-spacing: 0.1em;
-
     font-family: $font-main;
 
     @include abs-position;
@@ -36,7 +33,7 @@
   }
 
   &__image {
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out;
 
     background-color: $color-primary;
     background-position: center;
@@ -47,23 +44,25 @@
 
   &__overlay {
     transition: background-color 0.3s;
-
-    background-color: rgba($color-primary, 0.8);
+    background-color: rgba($color-primary, 0.5);
 
     @include abs-position;
   }
 
   &:hover {
     .skill-item__overlay {
-      background-color: rgba($color-primary, 0.95);
+      background-color: rgba($color-primary, 0.7);
     }
 
     .skill-item__image {
       transform: scale(1.1);
+      filter: blur(4px);
     }
 
     .skill-item__link {
       color: $color-accent;
+      text-decoration: underline 2px solid;
+      text-underline-offset: 4px;
     }
   }
 }

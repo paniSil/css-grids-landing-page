@@ -5,11 +5,25 @@
   display: flex;
   align-items: center;
 
-  background-color: $color-primary;
-
   min-height: 250px;
   padding-top: $gap-x3;
   padding-bottom: $gap-x3;
+
+  background-color: $color-primary;
+
+  &__link {
+    display: inline-block;
+    color: $color-gray-light;
+    text-decoration: underline solid 1px;
+    text-underline-offset: 4px;
+    margin-bottom: 8px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }
+  }
 
   &__container {
     @extend %container;
@@ -17,13 +31,15 @@
 
   &__socials {
     position: relative;
+
     display: flex;
     justify-content: center;
 
     margin-bottom: $gap-x3;
-    gap: $gap-lg;
 
     font-size: 2.25rem;
+
+    gap: $gap-lg;
 
     &::after {
       position: absolute;
@@ -53,9 +69,11 @@
 
     &-first {
       display: block;
+
       margin-bottom: 3px;
 
       letter-spacing: 0.33em;
+
       font-weight: 100;
 
       translate: 0.1em;
@@ -65,7 +83,9 @@
       display: block;
 
       letter-spacing: 0.07em;
+
       color: $color-white;
+
       font-weight: 700;
     }
   }

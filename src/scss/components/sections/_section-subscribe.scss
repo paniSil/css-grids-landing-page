@@ -38,6 +38,7 @@
   }
 
   &__control {
+    border-radius: 4px;
     display: block;
 
     width: 100%;
@@ -63,8 +64,8 @@
 
     &:hover,
     &:focus {
-      border-color: $color-white;
-      background-color: rgba($color-white, 0.1);
+      border-color: $color-accent;
+      background-color: rgba($color-gray-light, 0.2);
     }
 
     &:focus-visible {
@@ -88,7 +89,8 @@
     color: $color-white;
     border: 2px solid transparent;
     border-bottom-color: rgba($color-white, 0.2);
-    background-color: rgba($color-white, 0.1);
+    background-color: $color-accent;
+    border-radius: 4px;
 
     @include lg-min {
       font-size: 1.125rem;
@@ -97,7 +99,7 @@
     &:hover,
     &:focus {
       border-color: $color-white;
-      background-color: $color-accent;
+      background-color: $color-highlight;
     }
   }
 }

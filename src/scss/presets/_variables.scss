@@ -10,9 +10,10 @@ $xl: 1200px;
 $lg: 992px;
 $md: 768px;
 $sm: 576px;
-
 $gap: 20px;
+
 $gap-sm: math.div($gap, 2); // 10px
+
 $gap-lg: $gap * 1.5; // 30px
 $gap-x2: $gap * 2; // 40px
 $gap-x3: $gap * 3; // 60px

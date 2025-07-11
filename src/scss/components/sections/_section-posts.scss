@@ -10,6 +10,10 @@
     @extend %container;
   }
 
+  &__title {
+    color: $color-gray-dark;
+  }
+
   &__grid {
     display: grid;
 
@@ -42,15 +46,15 @@
 // post item
 .post-item {
   transition: background-color 0.3s;
-
-  background-color: $color-gray-light2;
+  border-radius: 8px;
+  background-color: rgba($color-gray-light, 0.5);
 
   &:hover {
     color: $color-primary;
-    background-color: color.adjust($color-gray-light2, $lightness: -10%);
+    background-color: color.adjust($color-gray-light2, $lightness: -5%);
 
     img {
-      scale: 1.2;
+      scale: 1.08;
     }
   }
 
@@ -66,22 +70,26 @@
     text-align: center;
 
     line-height: 1.5em;
+
+    h3 {
+      color: $color-gray-dark;
+    }
+    p {
+      color: $color-gray-dark;
+    }
   }
 
   &__picture {
     overflow: hidden;
-
+    border-radius: 8px;
     height: 300px;
   }
 
   &__image {
     display: block;
-
     width: 100%;
     height: 300px;
-
-    transition: scale 0.3s;
-
+    transition: scale 0.3s ease-in-out;
     object-fit: cover;
   }
 }
