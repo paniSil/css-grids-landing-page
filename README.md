@@ -1,4 +1,4 @@
-# CSS Grid Landing Page
+# CSS Grids Landing Page
 This website is a study project that was made during the Hillel FullStack JS course.
 
 Project page: [CSS Grids Landing](https://panisil.github.io/css-grids-landing-page/)
